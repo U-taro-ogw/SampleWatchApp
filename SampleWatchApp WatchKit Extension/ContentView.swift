@@ -9,10 +9,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+//    @State var list: Array<String> = ["a", "b"]
+    
+    @State var labelText = "Hello Watch"
+    
     var body: some View {
-        List {
-            Hoge1View()
-            Hoge3View()
+        VStack {
+            Text(labelText)
+                .font(.largeTitle)
+                .padding(.bottom)
+            
+            Button(action: {
+                self.labelText = "Change"
+            }){
+                Text("Button")
+                    .font(.largeTitle)
+                    .foregroundColor(Color.white)
+            }
+            .padding(.all)
+            .background(Color.blue)
         }
     }
 }
