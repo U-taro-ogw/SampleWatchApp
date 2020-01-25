@@ -10,7 +10,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        List {
+            Hoge1View()
+            Hoge3View()
+        }
+    }
+}
+
+struct Hoge1View: View {
+    var body: some View {
+        Text("aaa")
+    }
+}
+
+struct Hoge2View: View {
+    var body: some View {
+        Text("bbb").frame(width: 200, height: 200, alignment: .center).background(Color.red)
+    }
+}
+
+struct Hoge3View: View {
+    var body: some View {
+        Text("ccc")
     }
 }
 
