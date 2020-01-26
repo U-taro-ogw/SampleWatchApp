@@ -18,6 +18,10 @@
 		B69CA3BE23DC8C800092CB3A /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69CA3BD23DC8C800092CB3A /* NotificationView.swift */; };
 		B69CA3C023DC8C800092CB3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69CA3BF23DC8C800092CB3A /* Assets.xcassets */; };
 		B69CA3C323DC8C800092CB3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69CA3C223DC8C800092CB3A /* Preview Assets.xcassets */; };
+		B69CA3DA23DD62010092CB3A /* SendDelayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69CA3D923DD62010092CB3A /* SendDelayView.swift */; };
+		B69CA3DC23DD64820092CB3A /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69CA3DB23DD64820092CB3A /* MenuView.swift */; };
+		B69CA3DE23DD649F0092CB3A /* TimeSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69CA3DD23DD649F0092CB3A /* TimeSettingView.swift */; };
+		B69CA3E023DD64B30092CB3A /* SlackSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69CA3DF23DD64B30092CB3A /* SlackSettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +82,11 @@
 		B69CA3C223DC8C800092CB3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B69CA3C423DC8C800092CB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B69CA3C523DC8C800092CB3A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B69CA3D423DC99770092CB3A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B69CA3D923DD62010092CB3A /* SendDelayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDelayView.swift; sourceTree = "<group>"; };
+		B69CA3DB23DD64820092CB3A /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		B69CA3DD23DD649F0092CB3A /* TimeSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSettingView.swift; sourceTree = "<group>"; };
+		B69CA3DF23DD64B30092CB3A /* SlackSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackSettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +103,7 @@
 		B69CA39623DC8C7E0092CB3A = {
 			isa = PBXGroup;
 			children = (
+				B69CA3D423DC99770092CB3A /* README.md */,
 				B69CA3A523DC8C7F0092CB3A /* SampleWatchApp WatchKit App */,
 				B69CA3B423DC8C800092CB3A /* SampleWatchApp WatchKit Extension */,
 				B69CA39E23DC8C7F0092CB3A /* Products */,
@@ -123,7 +133,7 @@
 		B69CA3B423DC8C800092CB3A /* SampleWatchApp WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				B69CA3B523DC8C800092CB3A /* ContentView.swift */,
+				B69CA3D823DD61630092CB3A /* Views */,
 				B69CA3B723DC8C800092CB3A /* HostingController.swift */,
 				B69CA3B923DC8C800092CB3A /* ExtensionDelegate.swift */,
 				B69CA3BB23DC8C800092CB3A /* NotificationController.swift */,
@@ -142,6 +152,18 @@
 				B69CA3C223DC8C800092CB3A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B69CA3D823DD61630092CB3A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B69CA3B523DC8C800092CB3A /* ContentView.swift */,
+				B69CA3D923DD62010092CB3A /* SendDelayView.swift */,
+				B69CA3DB23DD64820092CB3A /* MenuView.swift */,
+				B69CA3DD23DD649F0092CB3A /* TimeSettingView.swift */,
+				B69CA3DF23DD64B30092CB3A /* SlackSettingView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,8 +294,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B69CA3E023DD64B30092CB3A /* SlackSettingView.swift in Sources */,
+				B69CA3DE23DD649F0092CB3A /* TimeSettingView.swift in Sources */,
+				B69CA3DC23DD64820092CB3A /* MenuView.swift in Sources */,
 				B69CA3B823DC8C800092CB3A /* HostingController.swift in Sources */,
 				B69CA3B623DC8C800092CB3A /* ContentView.swift in Sources */,
+				B69CA3DA23DD62010092CB3A /* SendDelayView.swift in Sources */,
 				B69CA3BC23DC8C800092CB3A /* NotificationController.swift in Sources */,
 				B69CA3BA23DC8C800092CB3A /* ExtensionDelegate.swift in Sources */,
 				B69CA3BE23DC8C800092CB3A /* NotificationView.swift in Sources */,
